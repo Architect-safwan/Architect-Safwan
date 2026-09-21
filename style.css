@@ -682,3 +682,69 @@ footer {
     }
 
 }
+/* ================================
+   SPORT CENTER PROJECT
+   ================================ */
+
+.sport-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.sport-photo {
+    width: 100%;
+    min-width: 0;
+}
+
+.sport-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.sport-photo p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+/* VIDEO */
+
+.sport-videos {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sport-videos video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* PHONE */
+
+@media (max-width: 600px) {
+
+    .sport-gallery {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .sport-photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sport-videos video {
+        width: 100%;
+        height: auto;
+    }
+
+}
