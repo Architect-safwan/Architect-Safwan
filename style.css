@@ -980,5 +980,30 @@ footer {
 
     footer {
         padding: 25px 5vw;
+      
     }
+}
+.instagram-link a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.instagram-link svg {
+    width: 22px;
+    height: 22px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+}
+
+.instagram-link a:hover {
+    opacity: .6;
+    transform: translateY(-2px);
 }
